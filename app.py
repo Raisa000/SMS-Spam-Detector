@@ -1,6 +1,6 @@
 # app.py
 import streamlit as st
-import joblib
+import pickle
 import numpy as np
 import os
 
@@ -12,9 +12,11 @@ VECT_PATH = "vectorizer.pkl"
 
 @st.cache_resource
 def load_objects():
-    # Load the trained RandomForest model and TF-IDF vectorizer
-    model = joblib.load(MODEL_PATH)
-    vectorizer = joblib.load(VECT_PATH)
+    # Load the trained RandomForest model and TF-IDF vectorizer using pickle
+    with open(MODEL_PATH, "rb") as f:
+        model = pickle.load(f)
+    with open(VECT_PATH, "rb") as f:
+        vectorizer = pickle.load(f)
     return model, vectorizer
 
 st.set_page_config(page_title="SMS Spam Detector", page_icon="📩", layout="centered")
@@ -87,5 +89,3 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.caption("Model: RandomForestClassifier using TF-IDF features.")
-
-
