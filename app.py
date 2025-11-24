@@ -2,7 +2,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-import os
 
 # -----------------------------
 # Paths to model and vectorizer in project root
@@ -19,6 +18,9 @@ def load_objects():
         vectorizer = pickle.load(f)
     return model, vectorizer
 
+# -----------------------------
+# Streamlit UI
+# -----------------------------
 st.set_page_config(page_title="SMS Spam Detector", page_icon="📩", layout="centered")
 st.title("📩 SMS Spam Detector")
 st.write("Enter an SMS message and the model will predict whether it's **spam** or **ham** (not spam).")
@@ -66,7 +68,7 @@ if st.button("Predict"):
         st.warning("Please enter a message to classify.")
     else:
         vect = vectorizer.transform([message])
-        X = vect.toarray()  # RandomForest needs dense input
+        X = vect.toarray()  # RandomForest requires dense input
         pred = model.predict(X)[0]
         proba = model.predict_proba(X)[0][1]  # probability of spam
 
