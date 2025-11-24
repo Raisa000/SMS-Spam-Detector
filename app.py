@@ -1,6 +1,5 @@
 # app.py
 import streamlit as st
-import joblib
 import numpy as np
 import os
 
@@ -87,3 +86,4 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.caption("Model: RandomForestClassifier using TF-IDF features.")
+
