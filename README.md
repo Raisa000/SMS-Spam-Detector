@@ -40,15 +40,19 @@ PROJECT STRUCTURE
 RUN LOCALLY
 ------------------------------------------------------------
 1. Clone the repository:
+   ```
    git clone https://github.com/raisa000/sms-spam-detector.git
    cd sms-spam-detector
+   ```
 
-2. Install dependencies:
+3. Install dependencies:
+   ```
    pip install -r requirements.txt
-
-3. Run the app:
+   ```
+4. Run the app:
+   ```
    streamlit run app.py
-
+   ```
 Streamlit will open the app at:
 [SMS Spam Detector](https://sms-spam-detector-raisa000.streamlit.app/)
 
