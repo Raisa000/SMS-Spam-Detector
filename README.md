@@ -31,8 +31,9 @@ sms-spam-detector/
 ├── model.pkl
 ├── vectorizer.pkl
 ├── requirements.txt
-├── spam_sms.csv   (optional dataset)
+├── spam_sms.csv        # optional dataset
 └── README.md
+
 
 ------------------------------------------------------------
 RUN LOCALLY
