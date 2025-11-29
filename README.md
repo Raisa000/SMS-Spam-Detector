@@ -25,7 +25,8 @@ TECH STACK
 ------------------------------------------------------------
 PROJECT STRUCTURE
 ------------------------------------------------------------
-<!-- sms-spam-detector/
+```
+ sms-spam-detector/
 │
 ├── app.py
 ├── model.pkl
@@ -33,7 +34,7 @@ PROJECT STRUCTURE
 ├── requirements.txt
 ├── spam_sms.csv        # optional dataset
 └── README.md
--->
+```
 
 ------------------------------------------------------------
 RUN LOCALLY
