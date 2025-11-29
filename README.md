@@ -54,7 +54,7 @@ RUN LOCALLY
    streamlit run app.py
    ```
 Streamlit will open the app at:
-[SMS Spam Detector](https://sms-spam-detector-raisa000.streamlit.app/)
+[[[SMS Spam Detector](http://localhost:8501)](http://localhost:8501)]
 
 ------------------------------------------------------------
 REQUIREMENTS.TXT (copy this)
@@ -78,7 +78,7 @@ MODEL DETAILS
 DEPLOY ON STREAMLIT CLOUD
 ------------------------------------------------------------
 1. Push all files to GitHub (including .pkl files)
-2. Visit https://share.streamlit.io
+2. Visit [SMS Spam Detector](https://sms-spam-detector-raisa000.streamlit.app/)
 3. Connect your GitHub repo
 4. Select main branch
 5. Deploy
