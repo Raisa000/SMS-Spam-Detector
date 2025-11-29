@@ -40,7 +40,7 @@ PROJECT STRUCTURE
 RUN LOCALLY
 ------------------------------------------------------------
 1. Clone the repository:
-   git clone https://github.com/your-username/sms-spam-detector.git
+   git clone https://github.com/raisa000/sms-spam-detector.git
    cd sms-spam-detector
 
 2. Install dependencies:
