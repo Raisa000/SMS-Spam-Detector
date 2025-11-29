@@ -50,7 +50,7 @@ RUN LOCALLY
    streamlit run app.py
 
 Streamlit will open the app at:
-http://localhost:8501
+[SMS Spam Detector](https://sms-spam-detector-raisa000.streamlit.app/)
 
 ------------------------------------------------------------
 REQUIREMENTS.TXT (copy this)
