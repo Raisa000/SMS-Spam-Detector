@@ -54,7 +54,7 @@ RUN LOCALLY
    streamlit run app.py
    ```
 Streamlit will open the app at:
-[[[SMS Spam Detector](http://localhost:8501)](http://localhost:8501)]
+[http://localhost:8501](http://localhost:8501)
 
 ------------------------------------------------------------
 REQUIREMENTS.TXT (copy this)
